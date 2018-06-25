@@ -1,0 +1,29 @@
+/*Aplicando Stylo al Login*/
+body{
+    background: pink;
+}
+.login{
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    padding: 40px 25px;
+    background: white;
+    border: 1px solid #c4c4c4;
+
+}
+.login-sesion{
+    width: 250px;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 0.5px;
+    float: center;
+}
+.login-input{
+width: 240px;
+height: 35px;
+margin-bottom: 25px;
+padding-left: 10px;
+background: #ffffff;
+border: 1px solid #cccccc;
+border-radius: 4px;
+}

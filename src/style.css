@@ -1,0 +1,148 @@
+/*----Style general de la estructura de la pagina principal----*/
+*{
+  margin: 0;
+  padding: 0;}
+h1{
+  /*background: pink; */
+  margin: 0em 0em 0em 10em;
+  text-align: center;
+  padding: 0.7em 0em 0em 0em;}
+.icon-login{
+/*  background:red;*/
+  height: 3em;
+  width: 13em;
+  margin: 1em 0em 0.5em 4em;
+  float:left;}
+header{
+  background: yellow;
+  padding:0em;
+  height: 5em;
+  width: auto;}
+.nav-wrapper{
+  float: left;
+  padding: 0.1em 0.1em 1.9em 0em;
+  background: green;
+  margin: 0em 0em 0em 0em;
+  height: 40em;
+  width: 20em;
+  text-align: center;}
+.userProfile{
+  width: 53%;
+  height: 30%;}
+#container{
+  background:rgb(39, 3, 39);
+  height:40em;
+  width: auto;
+  margin:0em 0em auto 20.2em;
+  padding: 2em 0em 0em 0em;
+  float: inline-start;}
+footer{
+  background: blue;
+  height: 2em;
+  width: auto;
+  padding: 0.3em;
+  text-align-last: center;}
+/* --------------Stylo del menu de la pagina-----------------------*/
+#menu{
+  width: 230px;
+  height: auto;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+  margin: 100px auto;
+  text-align: center;}
+.item label{
+  display: block;
+  cursor:pointer;
+  background-color: #fff;
+  font-size: 15px;
+  padding: 13px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #4b4a5e;/*color de la letra*/
+  border-bottom: solid 2px  #aeaea6;}
+.item label:hover{
+  color: #aeaea6;}
+.item ul{
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  width: 111%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0; /*desplazamienoto del sub menu*/
+  transition: all .4s linear;}
+.item ul li a{
+  border-radius: 4px;
+  width: 83%;
+  height: 12px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #e91fe9; /*color del submenu -rosado*/
+  color: #fff; /*color de letra*/
+  border-bottom:solid 2px #aeaea6;}
+.item ul li a:hover{
+  background-color: #e9e91f; /*efecto color del submenu-amarillo*/}
+.item input:checked ~ ul{
+  height: auto;
+  max-height: 65px;
+  transform:all;}
+.item input{
+  display: none;}
+/*------Aplicando Style al boton, lista desplegable y imput---*/
+  #submit-btn{
+    margin: 0em 0em 0em 13em;
+    padding: 0.3em;
+    width: 5em;}
+  .filtro{
+    margin: 0em 0em 0em 4em;
+    font-size: 19px}
+  #orderBy{
+    margin: 0.5em;
+    width: 15em;
+    height: 2.1em;}
+  #search-keyword{
+    width: 15em;
+    height: 1.6em;}
+/*-----------Aplicando stylos a las tablas-------------------*/
+    	@media
+    	  only screen
+        and (max-width: 760px), (min-device-width: 768px)
+        and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    	table, thead, tbody, th, td, tr {
+    			display: block;
+    		}
+
+    /* ----Oculta la cabezera---- */
+      thead tr {
+    			position: absolute;
+    			top: -9999px;
+    			left: -9999px;}
+    /*Distancia entre un dato de alumno a otro*/
+      tr {
+        margin: 0 0 1rem 0;}
+    /*se indica que las tablas tengan un color de forma intercaladaS*/
+      tr:nth-child(odd) {
+        background: #ccc;}
+    /*aplicando stylo a las filas de la tabla*/
+    	 td {
+    			border: none;
+    			border-bottom: 2px solid #eee;
+    			position: relative;
+    			padding-left: 50%;	}
+    /*Permite que exista una distancia entre la cabecera y los datos*/
+    	 td:before {
+    			position: absolute;
+    			top: 0;
+    			left: 6px;
+    			width: 35%;
+    			padding-right: 10px;
+    			white-space: nowrap;}
+      /*Permite que se muestra las columnas de forma horizontal*/
+    	  td:nth-of-type(1):before { content: "Nombre"; }
+    		td:nth-of-type(2):before { content: "Curso"; }
+    		td:nth-of-type(3):before { content: "Complitud Curso"; }
+    		td:nth-of-type(4):before { content: "Complitud Lectura"; }
+    		td:nth-of-type(5):before { content: "Complitud Ejercicio"; }
+    		td:nth-of-type(6):before { content: "Complitud Quizz"; }
+    	}
