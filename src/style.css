@@ -1,7 +1,10 @@
 /*----Style general de la estructura de la pagina principal----*/
 *{
   margin: 0;
-  padding: 0;}
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;}
 h1{
   /*background: pink; */
   margin: 0em 0em 0em 10em;
@@ -10,44 +13,49 @@ h1{
 .icon-login{
 /*  background:red;*/
   height: 3em;
-  width: 13em;
-  margin: 1em 0em 0.5em 4em;
+  width: 11em;
+  margin: 1em 0em 0.5em 4.5em;
   float:left;}
 header{
-  background: yellow;
+  background: #ff0066;
   padding:0em;
+  border-bottom:solid 2px  #aeaea6;
   height: 5em;
   width: auto;}
 .nav-wrapper{
   float: left;
   padding: 0.1em 0.1em 1.9em 0em;
-  background: green;
+  background:#ffcc00;
   margin: 0em 0em 0em 0em;
   height: 40em;
   width: 20em;
+/*  border-right:solid 2px  #aeaea6;*/
   text-align: center;}
 .userProfile{
   width: 53%;
-  height: 30%;}
+  height: 30%;
+  border-radius: 50%}
 #container{
-  background:rgb(39, 3, 39);
+  /*background:rgb(39, 3, 39);*/
   height:40em;
   width: auto;
   margin:0em 0em auto 20.2em;
   padding: 2em 0em 0em 0em;
+  border-left: inset;
   float: inline-start;}
 footer{
-  background: blue;
+  background: #ff0066;
   height: 2em;
   width: auto;
   padding: 0.3em;
+  border-top: solid 2px  #aeaea6;
   text-align-last: center;}
 /* --------------Stylo del menu de la pagina-----------------------*/
 #menu{
   width: 230px;
   height: auto;
   font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
-  margin: 100px auto;
+  margin: 38px auto;
   text-align: center;}
 .item label{
   display: block;
@@ -91,17 +99,31 @@ footer{
   #submit-btn{
     margin: 0em 0em 0em 13em;
     padding: 0.3em;
-    width: 5em;}
+    width: 5em;
+    color:#000;
+    background: #ffcc00;}
   .filtro{
-    margin: 0em 0em 0em 4em;
-    font-size: 19px}
+    margin: 0.2em 0em 0.2em 4em;
+    padding: 1px;
+    font-size: 14px;
+    background:#ffcc00;
+    border: 2px solid #eee
+    }
   #orderBy{
     margin: 0.5em;
     width: 15em;
-    height: 2.1em;}
+    height: 2.1em;
+    border-color: #eee;
+    border: inset}
   #search-keyword{
     width: 15em;
-    height: 1.6em;}
+    height: 1.6em;
+    border-color: #eee;
+    border: inset;}
+  .cohorts{
+    font-size: 22px;
+  }
+
 /*-----------Aplicando stylos a las tablas-------------------*/
     	@media
     	  only screen
