@@ -123,48 +123,63 @@ footer{
   .cohorts{
     font-size: 22px;
   }
-
 /*-----------Aplicando stylos a las tablas-------------------*/
-    	@media
-    	  only screen
-        and (max-width: 760px), (min-device-width: 768px)
-        and (max-device-width: 1024px)  {
+/*Aplicando Reponsive Web Desing*/
+@media screen and (min-width:780px) and (max-width:1024px){
+body{background: purple;}
+*{margin: 0em;
+  padding: 0em;}
+  #submit-btn{
+  width:5.8em;
+  margin: 0em 0em 2em 1.8em;}
+  #search-keyword{
+  margin: 0em 0em 2em 0.1em;}
+  .filtro{
+   margin: 0em 0em 2em 2.5em;
+   padding:0.1em;}
+  #orderBy{
+  margin: 0em 0em 2em 0.5em;
+  width: 15.5em;}
+ }
+@media screen and (min-width:480px) and (max-width:780px){
+*{margin: 0em;
+  padding: 0em;}
+body{background: red;}
+header{width: 56em;}
+footer{width: 55.4em;}
+#submit-btn{
+width:5.8em;
+margin: 0em 0em 0.5em 2.5em;}
+#search-keyword{
+margin: 0em 0em 1em 2.5em;}
+.filtro{
+margin: 0em 0em 0.5em 2.5em;
+float: left;
+padding:0.3em;}
+#orderBy{
+margin: 0em 0em 5em 2.7em;
+width: 15.5em;
+float: left;}
+}
 
-    /* Force table to not be like tables anymore */
-    	table, thead, tbody, th, td, tr {
-    			display: block;
-    		}
-
-    /* ----Oculta la cabezera---- */
-      thead tr {
-    			position: absolute;
-    			top: -9999px;
-    			left: -9999px;}
-    /*Distancia entre un dato de alumno a otro*/
-      tr {
-        margin: 0 0 1rem 0;}
-    /*se indica que las tablas tengan un color de forma intercaladaS*/
-      tr:nth-child(odd) {
-        background: #ccc;}
-    /*aplicando stylo a las filas de la tabla*/
-    	 td {
-    			border: none;
-    			border-bottom: 2px solid #eee;
-    			position: relative;
-    			padding-left: 50%;	}
-    /*Permite que exista una distancia entre la cabecera y los datos*/
-    	 td:before {
-    			position: absolute;
-    			top: 0;
-    			left: 6px;
-    			width: 35%;
-    			padding-right: 10px;
-    			white-space: nowrap;}
-      /*Permite que se muestra las columnas de forma horizontal*/
-    	  td:nth-of-type(1):before { content: "Nombre"; }
-    		td:nth-of-type(2):before { content: "Curso"; }
-    		td:nth-of-type(3):before { content: "Complitud Curso"; }
-    		td:nth-of-type(4):before { content: "Complitud Lectura"; }
-    		td:nth-of-type(5):before { content: "Complitud Ejercicio"; }
-    		td:nth-of-type(6):before { content: "Complitud Quizz"; }
-    	}
+@media screen and (max-width:480px){
+*{margin: 0em;
+  padding: 0em;}
+body{background: green;}
+header{width: 65em;}
+footer{width: 64.4em;}
+#submit-btn{
+width: 6em;
+margin: 0em 0em 0.5em 2.5em;}
+#search-keyword{
+margin: 0em 0em 1em 2.5em;}
+.filtro{
+width: 5em;
+margin: 0em 0em 0.3em 2.5em;
+float: left;
+padding:0.2em;}
+#orderBy{
+margin: 0em 0em 1em 2.5em;
+width: 15.5em;
+float: left;}
+}

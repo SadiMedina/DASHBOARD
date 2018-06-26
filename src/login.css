@@ -21,7 +21,7 @@
 
 .login-input{
 width: 25em;
-height: 2.7em;
+height: 2.4em;
 margin-top: 1em;
 margin-left: 2.3em;
 margin-bottom: 25px;
@@ -29,4 +29,36 @@ padding: 0.1em;
 background: #ffffff;
 border: 1px solid #cccccc;
 border-radius: 4px;
+}
+.login-button{
+  width: 12em;
+  height: 2.1em;
+  margin-left: 2.3em;
+  background: #ffcc00;
+  border: 0em;
+}
+label{
+  margin-left: 2.3em;
+  font-size: 15px;
+}
+/*Aplicando Reponsive Web Desing*/
+@media screen and (min-width:780px) and (max-width:1024px){
+.login{
+  /*background: yellow;*/
+  width: 25em;
+}
+}
+
+@media screen and (min-width:480px) and (max-width:780px){
+  .login{
+    /*background: red;*/
+    width: 25em;
+  }
+  }
+
+@media screen and (max-width:480px){
+  .login{
+    /*background: green;*/
+    width: 25em;
+}
 }
